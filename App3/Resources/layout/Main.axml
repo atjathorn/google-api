@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#eeee"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#009688" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#efefef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="CLICK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn"
+            android:padding="10dp"
+            android:textColor="#000" />
+    </LinearLayout>
+  <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridLayout1"
+        android:layout_gravity="center_horizontal">
+        <Button
+            android:text="Normal "
+            android:id="@+id/btnNormal" />
+        <Button
+            android:text="Satellite "
+            android:id="@+id/btnSatellite" />
+        <Button
+            android:text="Hybrid "
+            android:id="@+id/btnHybrid" />
+        <Button
+            android:text="Terrain "
+            android:id="@+id/btnTerrain" />
+    </GridLayout>
+  <fragment xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
